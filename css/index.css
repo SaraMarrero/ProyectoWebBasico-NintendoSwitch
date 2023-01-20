@@ -1,0 +1,2024 @@
+@media (min-width: 320px) and (max-width: 767px){
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-family: 'Nintendo Switch UI', sans-serif;
+		background-color: #D8D8D8;
+	}
+
+	/*---------- BOTÓN PARA CAMBIAR EL BODY ----------*/
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 5px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+		background: #2AC176;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	.button{
+		order: 3;
+	} 
+
+	/*---------- HEADER ----------*/
+
+	header{
+		/* height: 10vh; */
+		border-bottom: 5px solid #DF0101;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header > *{
+		order: 0;
+	}
+
+	.logo{
+		height: 10vh;
+		margin-left: 2em;
+		order: 2;
+	} 
+
+	nav{
+		order: 1;
+		margin-left: 0.5em; 
+	}
+
+	a{
+		text-decoration: none;
+		color: #DF0101;
+	}
+
+	ul{
+		display: none;
+	}
+
+	.input:checked  ~ ul{
+		display:block;
+		position:absolute;
+		width: 96.5%;
+	}
+
+
+	.input{
+		display: none;
+	}
+
+	.label{
+		box-sizing: border-box;
+		display: inline-block;
+		border: 1px solid #DF0101;
+		border-radius: 5px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-weight: bold;
+		text-align: center;
+		user-select: none;
+		color: #DF0101;
+	}
+
+	li{
+		list-style-type: none;
+		background-color: #D8D8D8;
+		padding: 1rem;
+		border-bottom: 1px solid;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+	/*---------- SLIDER PRINCIPAL ----------*/
+	.slider{
+        width: 100%;
+        height: 15rem;
+        overflow: hidden;
+		border-bottom: 5px solid #DF0101;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: slider 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(../img/slider1.jpeg); 
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    .slider li:nth-child(2){
+        background: url(../img/slider2.jpeg);
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    .slider li:nth-child(3){
+        background: url(../img/slider3.jpeg);
+        background-size: cover;
+        background-position: 35% 35%;
+		margin: 0;
+    }
+
+    .slider li:nth-child(4){
+        background: url(../img/slider4.jpeg);
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    @keyframes slider{
+        0%{
+			margin-left: 0;
+		}
+
+        20%{
+			margin-left: 0;
+		}
+
+        25%{
+			margin-left: -100%;
+		}
+
+        45%{
+			margin-left: -100%;
+		}
+
+        50%{
+			margin-left: -200%;
+		}
+        70%{
+			margin-left: -200%;
+		}
+
+        75%{
+			margin-left: -300%;
+		}
+
+        100%{
+			margin-left: -300%;
+		}
+    }
+
+	/*---------- SECTION DE VENTAS ----------*/
+
+	.ventas{
+		width: 100%;
+		text-align: center;
+		margin-top: 1.5em;
+	}
+
+	.buttonExterno, .aButton{
+		color: white;
+		background-color: #DF0101;
+		border: hidden;
+		padding: 0.7rem;
+		margin-left: 1em;
+		margin-right: 1em;
+		border-radius: 5px;
+		font-weight: bold;
+		margin-top: 1em;
+	}
+
+	/*---------- SECTION DE NOVEDADES ----------*/
+
+	.tituloSectionVentas{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		margin-top: 4em;
+		justify-content: space-evenly;
+		background-color: white;
+		box-shadow: 1px 1px 15px 5px #DF0101;
+		margin-bottom: 3.5em;
+	}
+
+	.icono4{
+		width: 50%;
+	}
+	
+	.articleJuegosoNuevos{
+		display: grid;
+		grid-template-columns: repeat(1, 100%);
+		grid-template-rows: repeat(5, 20%);
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		color: #1C1C1C;
+	}
+
+	.textoNovedades{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		margin: 1em;
+		font-size: 3vw;
+	}
+
+	.nuevoJuego1{
+		background: url(../img/zelda3.jpg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 30vh;
+		grid-column: 1/1;
+		grid-row: 2/3;
+	}
+
+	.nuevoJuego2{
+		background: url(../img/marvel.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 30vh;
+		grid-column: 1/1;
+		grid-row: 3/4;
+	}
+
+	.nuevoJuego3{
+		background: url(../img/legacy.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 30vh;
+		grid-column: 1/1;
+		grid-row: 4/5;
+	}
+
+	.nuevoJuego4{
+		background: url(../img/sherlock2.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 30vh;
+		grid-column: 1/1;
+		grid-row: 5/6;
+	}
+
+	/*---------- SECTION JUEGOS EN VENTA ----------*/
+
+	.sectionVentas{
+		background-color: white;
+		padding-bottom: 1.5rem;
+	}
+
+	.articleJuegosVentas{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 5% 18.3333333333% 10% 5% 18.3333333333% 10% 5% 18.3333333333% 10%;
+		align-items: center;
+		margin-top: 3em;
+    }
+
+	.tituloPrimero{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+    .primero{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .textoPrimero{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+    }
+
+	.ul1{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 50%;
+		border: 3px solid #DF0101;
+		border-radius: 3px;        
+    }
+
+    .ul1 .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 30vw;
+    }
+
+    .ul1 li:nth-child(1){
+        background: url(../img/mariokart.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(2){
+        background: url(../img/animalCrossing.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul1 li:nth-child(3){
+        background: url(../img/smash.png);
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul1 li:nth-child(4){
+        background: url(../img/zeldaCaratula.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(5){
+        background: url(../img/pokemon.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+	.tituloSegundo{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        text-align: center;
+    }
+
+	.segundo{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .textoSegundo{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 1.5em;
+		margin-bottom: 2em;
+		color: #1C1C1C;
+    }
+
+	.ul2{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto; 
+		width: 50%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul2 .item1{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 30vw;      
+    }
+
+    .ul2 li:nth-child(1){
+        background: url(../img/pokemon2.png); 
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul2 li:nth-child(2){
+		background: url(../img/splataloon.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(3){
+        background: url(../img/xenoblade.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul2 li:nth-child(4){
+        background: url(../img/fireemblem.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(5){
+        background: url(../img/stricker.png);
+        background-size: cover;
+        background-position: center 40%;
+    }
+
+	.tituloTercero{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        text-align: center;
+    }
+
+	.tercero{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+
+    .textoTercero{
+		grid-column: 1/2;
+        grid-row: 9/10;
+        text-align: center;
+		margin: 0 auto;
+		margin-top: 1em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+		width: 80%;
+    }
+
+    .ul3{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 50%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul3 .item2{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 30vw;      
+    }
+
+    .ul3 li:nth-child(1){
+        background: url(../img/downwell.png); 
+        background-size: cover;
+        background-position: center 62%;
+    }
+
+    .ul3 li:nth-child(2){
+		background: url(../img/dragon.png);
+        background-size: cover;
+        background-position: center 56%;
+    }
+
+    .ul3 li:nth-child(3){
+        background: url(../img/anotherWorld.png);
+        background-size: cover;
+        background-position: center 58%;
+    }
+
+    .ul3 li:nth-child(4){
+        background: url(../img/amongUs.png);
+        background-size: cover;
+        background-position: center 67%;
+    }
+
+	/*---------- SECTION DE REDES SOCIALES ----------*/
+
+	.h2RedesSociales{
+		margin-top: 2em;
+		margin-bottom: 0.7em;
+		text-align: center;
+		background-color: #DF0101;
+	}
+
+	.redesSociales{
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: repeat(3, 33.3333333333%);
+		text-align: center;
+		justify-items: center;
+		grid-row-gap: 2%;
+	}
+
+	.div1{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 1/2;
+		grid-column: 1/3;
+	}
+
+	.facebook{
+		width: 20%;
+	}
+
+	.div2{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 1/2;
+		grid-column: 3/5;
+	}
+
+	.instagram{
+		width: 20%;
+	}
+
+	.div3{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 2/3;
+		grid-column: 1/3;
+	}
+
+	.twiter{
+		width: 20%;
+	}
+
+	.div4{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 2/3;
+		grid-column: 3/5;
+	}
+
+	.youtube{
+		width: 20%;
+	}
+
+	.div5{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 3/4;
+		grid-column: 1/3;
+	}
+
+	.linkedin{
+		width: 20%;
+	}
+
+	.div6{
+		width: 45%;
+		height: 100%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+		grid-row: 3/4;
+		grid-column: 3/5;
+	}
+
+	.tiktok{
+		width: 20%;
+	}
+
+	/*---------- FOOTER ----------*/
+
+	footer{
+		background-color: #DF0101;
+		margin-top: 2em;
+	}
+
+	.articleListas{
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(2, 50%);
+		text-align: center;
+		padding-top: 1rem;
+		align-items: center;
+	}
+
+	.articleListas > div > p{
+		color: white;
+	}
+
+	.divFooter1{
+		grid-column:1/2;
+		grid-row: 1/2;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	.divFooter2{
+		grid-column:2/3;
+		grid-row: 1/2;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	.divFooter3{
+		grid-column:1/2;
+		grid-row: 2/3;
+	}
+
+	.divFooter4{
+		grid-column:2/3;
+		grid-row: 2/3;
+	}
+
+	.articleImgFooter{
+		text-align: center;	
+	}
+	.imagenFooter{
+		width: 35%;
+		height: 25vw;
+	}
+
+	.imagenLogoFoto{
+		display: none;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-family: 'Nintendo Switch UI', sans-serif;
+		background-color: #D8D8D8;
+	}
+
+	/*---------- BOTÓN PARA CAMBIAR EL BODY ----------*/
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 5px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+		background: #2AC176;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	/*---------- HEADER ----------*/
+
+	header{
+		height: 10vh;
+		border-bottom: 5px solid #DF0101;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
+	}
+
+	.logo{
+		height: 10vh;
+		margin-left: 2em;
+	}
+
+	ul{
+		display: flex;
+	}
+
+	li{
+		list-style-type: none;
+		margin-left: 1em;
+		margin-right: 1em; 
+		color: #DF0101;
+	}
+
+	.input, .label{
+		display: none;
+	}
+
+	a{
+		text-decoration: none;
+		color: #DF0101;
+	}
+
+	/*---------- SLIDER PRINCIPAL ----------*/
+	.slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+		border-bottom: 5px solid #DF0101;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: slider 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(../img/slider1.jpeg); 
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    .slider li:nth-child(2){
+        background: url(../img/slider2.jpeg);
+        background-size: cover;
+        background-position: center 45%;
+		margin: 0;
+    }
+
+    .slider li:nth-child(3){
+        background: url(../img/slider3.jpeg);
+        background-size: cover;
+        background-position: 35% 35%;
+		margin: 0;
+    }
+
+    .slider li:nth-child(4){
+        background: url(../img/slider4.jpeg);
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    @keyframes slider{
+        0%{
+			margin-left: 0;
+		}
+
+        20%{
+			margin-left: 0;
+		}
+
+        25%{
+			margin-left: -100%;
+		}
+
+        45%{
+			margin-left: -100%;
+		}
+
+        50%{
+			margin-left: -200%;
+		}
+        70%{
+			margin-left: -200%;
+		}
+
+        75%{
+			margin-left: -300%;
+		}
+
+        100%{
+			margin-left: -300%;
+		}
+    }
+
+	/*---------- SECTION DE VENTAS ----------*/
+
+	.ventas{
+		width: 100%;
+		text-align: center;
+		margin-top: 1.5em;
+	}
+
+	.buttonExterno, .aButton{
+		color: white;
+		background-color: #DF0101;
+		border: hidden;
+		padding: 1rem;
+		margin-left: 1em;
+		margin-right: 1em;
+		border-radius: 5px;
+		font-weight: bold;
+		margin-top: 1em;
+	}
+
+	/*---------- SECTION DE NOVEDADES ----------*/
+
+	.tituloSectionVentas{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		margin-top: 4em;
+		justify-content: space-evenly;
+		background-color: white;
+		box-shadow: 1px 1px 15px 5px #DF0101;
+		padding: 0.5rem;
+		margin-bottom: 3em;
+	}
+
+	.icono4{
+		width: 40%;
+	}
+	
+	.articleJuegosoNuevos{
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: repeat(3, 33.3333333333%);
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		color: #1C1C1C;
+	}
+
+	.textoNovedades{
+		grid-column: 1/5;
+		grid-row: 1/2;
+		margin: 2em;
+		font-size: 2vw;
+	}
+
+	.nuevoJuego1{
+		background: url(../img/zelda3.jpg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+
+	.nuevoJuego2{
+		background: url(../img/marvel.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 3/5;
+		grid-row: 2/3;
+	}
+
+	.nuevoJuego3{
+		background: url(../img/legacy.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 1/3;
+		grid-row: 3/4;
+	}
+
+	.nuevoJuego4{
+		background: url(../img/sherlock2.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 3/5;
+		grid-row: 3/4;
+	}
+
+
+	/*---------- SECTION JUEGOS EN VENTA ----------*/
+
+	.sectionVentas{
+		background-color: white;
+		padding-bottom: 1.5rem;
+	}
+
+	.articleJuegosVentas{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 10% 30% 10% 10% 30% 10%;
+		align-items: center;
+		margin-top: 3em;
+    }
+
+	.tituloPrimero{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+    .primero{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .textoPrimero{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 3em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+    }
+
+	.ul1{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 73%;
+		border: 3px solid #DF0101;
+		border-radius: 3px;        
+    }
+
+    .ul1 .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 23vw;
+        border-radius: 10px; 
+    }
+
+    .ul1 li:nth-child(1){
+        background: url(../img/mariokart.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(2){
+        background: url(../img/animalCrossing.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul1 li:nth-child(3){
+        background: url(../img/smash.png);
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul1 li:nth-child(4){
+        background: url(../img/zeldaCaratula.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(5){
+        background: url(../img/pokemon.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+	.tituloSegundo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+	.segundo{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .textoSegundo{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 2.5em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+    }
+
+	.ul2{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto; 
+		width: 75%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul2 .item1{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 23vw;      
+    }
+
+    .ul2 li:nth-child(1){
+        background: url(../img/pokemon2.png); 
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul2 li:nth-child(2){
+		background: url(../img/splataloon.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(3){
+        background: url(../img/xenoblade.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul2 li:nth-child(4){
+        background: url(../img/fireemblem.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(5){
+        background: url(../img/stricker.png);
+        background-size: cover;
+        background-position: center 40%;
+    }
+
+	.tituloTercero{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+	.tercero{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+
+    .textoTercero{
+		grid-column: 1/3;
+        grid-row: 6/7;
+        text-align: center;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+		width: 80%;
+    }
+
+    .ul3{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 36.5%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul3 .item2{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 23vw;      
+    }
+
+    .ul3 li:nth-child(1){
+        background: url(../img/downwell.png); 
+        background-size: cover;
+        background-position: center 62%;
+    }
+
+    .ul3 li:nth-child(2){
+		background: url(../img/dragon.png);
+        background-size: cover;
+        background-position: center 56%;
+    }
+
+    .ul3 li:nth-child(3){
+        background: url(../img/anotherWorld.png);
+        background-size: cover;
+        background-position: center 58%;
+    }
+
+    .ul3 li:nth-child(4){
+        background: url(../img/amongUs.png);
+        background-size: cover;
+        background-position: center 67%;
+    }
+
+	/*---------- SECTION DE REDES SOCIALES ----------*/
+
+	.h2RedesSociales{
+		margin-top: 2em;
+		margin-bottom: 1.5em;
+		text-align: center;
+		background-color: #DF0101;
+	}
+
+	.redesSociales{
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+	}
+
+	.div1{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 2000px;
+	}
+
+	.facebook{
+		width: 30%;
+	}
+
+	.div2{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.instagram{
+		width: 30%;
+	}
+
+	.div3{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.twiter{
+		width: 30%;
+	}
+
+	.div4{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.youtube{
+		width: 30%;
+	}
+
+	.div5{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.linkedin{
+		width: 30%;
+	}
+
+	.div6{
+		width: 12%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.tiktok{
+		width: 30%;
+	}
+
+	/*---------- FOOTER ----------*/
+
+	footer{
+		background-color: #DF0101;
+		margin-top: 3em;
+	}
+
+	.articleListas{
+		display: grid;
+		grid-template-columns: repeat(3, 33.3333333333%);
+		grid-template-rows: repeat(2, 50%);
+		text-align: center;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		align-items: center;
+		justify-items: center;
+	}
+
+	.articleListas > div > p{
+		color: white;
+	}
+
+	.divFooter1{
+		grid-column:1/2;
+		grid-row: 1/2;
+	}
+
+	.divFooter2{
+		margin-top: 0.5em;
+		grid-column:1/2;
+		grid-row: 2/3;
+	}
+
+	.divFooter3{
+		grid-column:3/4;
+		grid-row: 1/2;
+	}
+
+	.divFooter4{
+		margin-top: 0.5em;
+		grid-column:3/4;
+		grid-row: 2/3;
+	}
+
+	.imagenLogoFoto{
+		grid-column:2/3;
+		grid-row: 1/3;
+		text-align: center;
+		width: 80%;
+		height: 17vw;
+	}
+
+	.articleImgFooter{
+		display: none;
+	}
+	
+}
+
+@media (min-width: 1024px){
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		font-family: 'Nintendo Switch UI', sans-serif;
+		background-color: #D8D8D8;
+	}
+
+	/*---------- BOTÓN PARA CAMBIAR EL BODY ----------*/
+
+	.content-input input,
+	.content-select select{
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.content-input input{
+		visibility: hidden;
+		position: absolute;
+		right: 0;
+	}
+
+	.content-input{
+		position: relative;
+		margin-bottom: 30px;
+		padding:5px 0 5px 60px;
+		display: block;
+	}
+
+	.content-input input + i{
+		background: #f0f0f0;
+		border:2px solid rgba(0,0,0,0.2);
+		position: absolute; 
+		left: 0;
+		top: 0;
+	}
+
+	.content-input input[type=checkbox ] + i{
+		width: 52px;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	.content-input input[type=checkbox] + i:before{
+		content: ''; 
+		width: 26px;
+		height: 26px;
+		background: #fff;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 1;
+		left: 0px;
+		top: 0px;
+		-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i:before{
+		left: 22px;
+		-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+		box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+	}
+
+	.content-input input[type=checkbox]:checked + i{
+		background: #2AC176;
+	}
+
+	.content-input{
+		float: right;
+		margin: 0.5em;
+	}
+
+	/*---------- HEADER ----------*/
+
+	header{
+		height: 10vh;
+		border-bottom: 5px solid #DF0101;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-weight: bold;
+	}
+
+	.logo{
+		height: 10vh;
+		margin-left: 2em;
+	}
+
+	ul{
+		display: flex;
+	}
+
+	li{
+		list-style-type: none;
+		margin-left: 1em;
+		margin-right: 1em; 
+		color: #DF0101;
+	}
+
+	.input, .label{
+		display: none;
+	}
+
+	a{
+		text-decoration: none;
+		color: #DF0101;
+	}
+
+	/*---------- SLIDER PRINCIPAL ----------*/
+	.slider{
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+		border-bottom: 5px solid #DF0101;
+    }
+
+    .slider ul{
+        display: flex;
+        animation: slider 20s infinite alternate linear;
+        width: 400%;
+        height: 100%;
+    }
+
+    .slider li{
+        width: 100%;
+        list-style: none;
+        height: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .slider li:first-of-type{
+        background: url(../img/slider1.jpeg); 
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    .slider li:nth-child(2){
+        background: url(../img/slider2.jpeg);
+        background-size: cover;
+        background-position: center 44%;
+		margin: 0;
+    }
+
+    .slider li:nth-child(3){
+        background: url(../img/slider3.jpeg);
+        background-size: cover;
+        background-position: 35% 35%;
+		margin: 0;
+    }
+
+    .slider li:nth-child(4){
+        background: url(../img/slider4.jpeg);
+        background-size: cover;
+        background-position: center center;
+		margin: 0;
+    }
+
+    @keyframes slider{
+        0%{
+			margin-left: 0;
+		}
+
+        20%{
+			margin-left: 0;
+		}
+
+        25%{
+			margin-left: -100%;
+		}
+
+        45%{
+			margin-left: -100%;
+		}
+
+        50%{
+			margin-left: -200%;
+		}
+        70%{
+			margin-left: -200%;
+		}
+
+        75%{
+			margin-left: -300%;
+		}
+
+        100%{
+			margin-left: -300%;
+		}
+    }
+
+	/*---------- SECTION DE VENTAS ----------*/
+
+	.ventas{
+		width: 100%;
+		text-align: center;
+		margin-top: 2em;
+	}
+
+	.buttonExterno, .aButton{
+		color: white;
+		background-color: #DF0101;
+		border: hidden;
+		padding: 1rem;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
+		border-radius: 5px;
+		font-weight: bold;
+	}
+
+	/*---------- SECTION DE NOVEDADES ----------*/
+
+	.tituloSectionVentas{
+		text-align: center;
+		display: flex;
+		align-items: center;
+		margin-top: 4em;
+		justify-content: space-evenly;
+		background-color: white;
+		box-shadow: 1px 1px 15px 5px #DF0101;
+		padding: 0.5rem;
+		margin-bottom: 3em;
+	}
+
+	.icono4{
+		width: 40%;
+	}
+	
+	.articleJuegosoNuevos{
+		display: grid;
+		grid-template-columns: repeat(4, 25%);
+		grid-template-rows: repeat(2, 50%);
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		color: #1C1C1C;
+	}
+
+	.textoNovedades{
+		grid-column: 1/3;
+		grid-row: 1/2;
+		margin: 2em;
+		font-size: 1.5vw;
+	}
+
+	.nuevoJuego1{
+		background: url(../img/zelda3.jpg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+
+	.nuevoJuego2{
+		background: url(../img/marvel2.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 4/5;
+		grid-row: 1/2;
+	}
+
+	.nuevoJuego3{
+		background: url(../img/legacy.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+
+	.nuevoJuego4{
+		background: url(../img/sherlock2.jpeg);
+		background-size: cover;
+        background-position: center center;
+		width: 100%;
+		height: 35vh;
+		grid-column: 3/5;
+		grid-row: 2/3;
+	}
+
+	/*---------- SECTION JUEGOS EN VENTA ----------*/
+
+	.sectionVentas{
+		background-color: white;
+		padding-bottom: 1.5rem;
+	}
+
+	.articleJuegosVentas{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.3333333333%);
+        grid-template-rows: 10% 75% 15%;
+		align-items: center;
+		margin-top: 3em;
+    }
+
+	.tituloPrimero{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+    .primero{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .textoPrimero{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+    }
+
+	.ul1{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 70%;
+		border: 3px solid #DF0101;
+		border-radius: 3px;        
+    }
+
+    .ul1 .item{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 15vw;
+        border-radius: 10px; 
+    }
+
+    .ul1 li:nth-child(1){
+        background: url(../img/mariokart.png); 
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(2){
+        background: url(../img/animalCrossing.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul1 li:nth-child(3){
+        background: url(../img/smash.png);
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul1 li:nth-child(4){
+        background: url(../img/zeldaCaratula.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul1 li:nth-child(5){
+        background: url(../img/pokemon.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+	.tituloSegundo{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+	.segundo{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .textoSegundo{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        text-align: center;
+        width: 80%;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+    }
+
+	.ul2{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto; 
+		width: 70%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul2 .item1{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 15vw;      
+    }
+
+    .ul2 li:nth-child(1){
+        background: url(../img/pokemon2.png); 
+        background-size: cover;
+        background-position: center 57%;
+    }
+
+    .ul2 li:nth-child(2){
+		background: url(../img/splataloon.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(3){
+        background: url(../img/xenoblade.png);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .ul2 li:nth-child(4){
+        background: url(../img/fireemblem.png);
+        background-size: cover;
+        background-position: center 55%;
+    }
+
+    .ul2 li:nth-child(5){
+        background: url(../img/stricker.png);
+        background-size: cover;
+        background-position: center 40%;
+    }
+
+	.tituloTercero{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        text-align: center;
+		margin-bottom: -2em;
+    }
+
+	.tercero{
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .textoTercero{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        text-align: center;
+		margin: 0 auto;
+		margin-top: 2em;
+		margin-bottom: 3em;
+		color: #1C1C1C;
+		width: 80%;
+    }
+
+    .ul3{
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        margin: 0 auto;
+        width: 70%;
+		border: 3px solid #DF0101;
+		border-radius: 3px; 
+    }
+
+    .ul3 .item2{
+        min-width: 100%;
+        scroll-snap-align: start;
+        list-style-type: none;
+        width: 100%;
+        height: 15vw;      
+    }
+
+    .ul3 li:nth-child(1){
+        background: url(../img/downwell.png); 
+        background-size: cover;
+        background-position: center 62%;
+    }
+
+    .ul3 li:nth-child(2){
+		background: url(../img/dragon.png);
+        background-size: cover;
+        background-position: center 56%;
+    }
+
+    .ul3 li:nth-child(3){
+        background: url(../img/anotherWorld.png);
+        background-size: cover;
+        background-position: center 58%;
+    }
+
+    .ul3 li:nth-child(4){
+        background: url(../img/amongUs.png);
+        background-size: cover;
+        background-position: center 67%;
+    }
+
+	/*---------- SECTION DE REDES SOCIALES ----------*/
+
+	.h2RedesSociales{
+		margin-top: 2em;
+		margin-bottom: 1.5em;
+		text-align: center;
+		background-color: #DF0101;
+	}
+
+	.redesSociales{
+		display: flex;
+		text-align: center;
+		justify-content: space-around;
+	}
+
+	.div1{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 2000px;
+	}
+
+	.facebook{
+		width: 30%;
+	}
+
+	.div2{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.instagram{
+		width: 30%;
+	}
+
+	.div3{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.twiter{
+		width: 30%;
+	}
+
+	.div4{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.youtube{
+		width: 30%;
+	}
+
+	.div5{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.linkedin{
+		width: 30%;
+	}
+
+	.div6{
+		width: 10%;
+		padding-bottom: 0.7rem;
+		padding-top: 0.7rem;
+		border: 3px solid #DF0101;
+		background-color: white;
+		border-radius: 600px;
+	}
+
+	.tiktok{
+		width: 30%;
+	}
+
+	/*---------- FOOTER ----------*/
+
+	footer{
+		background-color: #DF0101;
+		margin-top: 3em;
+		padding-bottom: 1em;
+	}
+
+	.articleListas{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		padding-top: 1rem;
+	}
+
+	.articleListas > div > p{
+		color: white;
+	}
+
+	.imagenLogoFoto{
+		text-align: center;
+		width: 10%;
+		height: 8vw;
+	}
+
+	.articleImgFooter{
+		display: none;
+	}
+}
