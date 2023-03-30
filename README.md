@@ -7,10 +7,10 @@ Este proyecto va sobre un web tanto de Nintendo Switch como de los juegos que of
 # Uso de la aplicación
 Actualemente su única funcinalidad es ver juegos, nintendos e información de ambos, pero a continuación explico las funcionalidades que le añadiré al proyecto:
 
-## Usuario sin cuenta
+## 👤Usuario sin cuenta
 El usuario que aún no tenga cuenta o no haya hecho login con sus datos, solo podrá visualizar la página principal para ver un los tipos de nintendo, información de nuevos juegos y los juegos que se vende.
 
-## Usuario con cuenta
+## 👤Usuario con cuenta
 1. Para poder usar la web, si es nuevo usuario, primero tienen que registrarse, si ya tienes cuenta tendrás que hacer login, para  acceder a dichas páginas tendría que darle al icono de usuario que hay arriba a la derecha en el menú, de ahí se desplegarán dos opciones, iniciar sesión o regitrarse.
 
 2. Si es nuevo usuario, nada más registrarse se le redirigirá a la página de iniciar sesión, sea nuevo usuario o no, nada más iniciar sesión irá de manera automática a la página de inicio.
@@ -27,7 +27,7 @@ El usuario que aún no tenga cuenta o no haya hecho login con sus datos, solo po
 
 7. En la parte superior derecha hay un botón que simplemente cambia el fondo de la web, dependiendo si lo quiere en modo oscuro o claro.
 
-# Tecnologías
+# 🪛Tecnologías
 Para llevar a cabo la realización de este proyecto, he utilizado:
 * HTML
 * CSS
