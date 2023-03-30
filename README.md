@@ -1,4 +1,4 @@
-# Antes de comenzar
+# ⚠️ Antes de comenzar ⚠️
 Importante aclarar que no es una página web real, es un proyecto creado para el módulo de Desarrollo web en entorno cliente y Diseño de interfaces web para segundo de ciclo de Desarrollo de aplicaciones web.
 
 # Nintendo Switch
@@ -44,5 +44,5 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 # Autora
 * Sara Marrero Miranda
 
-# ⚠️ AVISO
+# AVISO
 En la actualidad tengo más conocimientos por lo que el proyecto está incompleto, actualmente estoy mejorando el código existente y ampliandolo.
