@@ -44,5 +44,5 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 # Autora
 * Sara Marrero Miranda
 
-# AVISO
+# 🟢 AVISO
 En la actualidad tengo más conocimientos por lo que el proyecto está incompleto, actualmente estoy mejorando el código existente y ampliandolo.
