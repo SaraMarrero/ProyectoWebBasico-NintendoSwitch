@@ -5,7 +5,10 @@ Importante aclarar que no es una página web real, es un proyecto creado para el
 Este proyecto va sobre un web tanto de Nintendo Switch como de los juegos que ofrece. En el cuál, sus principales funciones son mostrar los tipos de nintendo switch actuales, dar a conocer los próximos juegos que saldra, dar ideas, sobre juegos más vendidos, económicos o los más recientes y mostrar los enlaces a sus redes sociales.
 
 # Página principal
+## Modo claro
 ![Pagina principal](./img/readme.png)
+
+## Modo oscuro
 ![Pagina principal](./img/readme2.png)
 
 # Uso de la aplicación
