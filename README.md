@@ -41,7 +41,7 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 * JAVASCRIPT
 * Github
 
-# Autora
+# 👩🏻‍💻Autora
 * Sara Marrero Miranda
 
 # 🔔 AVISO
