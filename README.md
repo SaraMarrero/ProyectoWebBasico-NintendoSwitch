@@ -45,4 +45,4 @@ Para llevar a cabo la realización de este proyecto, he utilizado:
 * Sara Marrero Miranda
 
 # 🔔 AVISO
-En la actualidad tengo más conocimientos por lo que el proyecto está incompleto, actualmente estoy mejorando el código existente y ampliandolo.
+Actualmente estoy mejorando el código existente.
